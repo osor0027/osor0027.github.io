@@ -1,0 +1,280 @@
+body {
+	background-color: #F7F7FF;
+	font-family: 'Montserrat', sans-serif;
+	background-image: url(images/bg-image/scooter.svg);
+}
+
+/*----------------------------MOBILE VIEW*----------------------------*/
+/*TITTLE STYLE*/
+
+/*this is to add margins to the content*/
+.maindiv,
+header {
+	margin: 1rem;
+	margin: auto;
+	width: 90%;
+}
+
+.maindiv {
+	background-image: url(../images/bg-image/scooter.svg);
+	background-repeat: no-repeat;
+}
+
+/*this class is to change the style of the firts h1 on the page*/
+.div1 h1 {
+	font-size: 60px;
+	font-weight: bold;
+	color: #333131;
+}
+
+/*this class is to change the style of the firts h2 on the page*/
+.div1 h2 {
+	margin-top: 20px;
+	font-size: 24px;
+	color: #333131;
+}
+
+/*CONTACT FORM STYLE*/
+#contact {
+	background-color: #FFFFFF;
+	width: 300px;
+	height: 495px;
+	padding: 3rem;
+	align-content: center;
+	margin: 2rem;
+	background-color: #FFFFFF;
+	border-radius: 26px;
+	padding: 2rem;
+	box-shadow: 5px 10px 15px #aaaaaa;
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+/*change the style of the h1 in the contact form*/
+#contact h1 {
+	font-size: 40px;
+	color: #333131;
+	font-weight: bold;
+}
+
+/*change the style of the h2 in the contact form*/
+#contact h2 {
+	margin-top: 20px;
+	font-size: 16px;
+	color: #333131;
+}
+
+/*Add style to the form inputs */
+#contact fieldset input {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	;
+	font-size: 16px;
+	color: #9B9B9B;
+	padding: 3px;
+	background-color: #F4F4F5;
+	border: none;
+	border-radius: 11px;
+	width: 300px;
+	height: 40px;
+}
+
+#contact li {
+	margin-top: 10px;
+	list-style: none;
+}
+
+/*Add style to the buttom*/
+#contact-submit {
+	width: 280px;
+	height: 55px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-size: 24px;
+	color: #333131;
+	font-weight: bold;
+	background-color: #57EEAB;
+	border-radius: 11px;
+	border: none;
+}
+
+/*change the color of the link at the bottom of the form*/
+.link p a {
+	margin-left: 3px;
+	text-decoration: none;
+	color: #FF8480;
+}
+
+/*FOOTER STYLE*/
+/*change the button of the footer form*/
+#calculate-submit {
+	color: #F7F7FF;
+	font-weight: bold;
+	padding: 6px;
+	background-color: #FF8480;
+	border: none;
+	border-radius: 3px;
+}
+
+footer {
+	width: 100%;
+	background-color: #fffd8d;
+	padding: 2rem;
+}
+
+/*this is to change the style of the foother h1*/
+footer h1 {
+	font-size: 18px;
+	font-weight: bold;
+	color: #333131;
+}
+
+/*this is to change the style of the foother h2*/
+footer h2 {
+	margin-top: 10px;
+	font-size: 16px;
+	color: #333131;
+}
+
+/*make an invisble box to organize the grid for the footer form*/
+#calculate {
+	margin-top: 10px;
+	width: 302px;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: 2fr;
+	grid-gap: 10px;
+}
+
+#calculate fieldset:nth-child(1) {
+	grid-column: 1 /2;
+}
+
+#calculate fieldset:nth-child(2) {
+	grid-column: 2 / span 2;
+}
+
+#calculate fieldset:nth-child(3) {
+	grid-column: 1 / 4;
+}
+
+/*give style to the input area for the footer form*/
+#calculate fieldset input {
+	padding-left: 4px;
+	font-size: 16px;
+	border-radius: 11px;
+	border: none;
+	width: 100%;
+	height: 40px;
+}
+
+#calculate fieldset button {
+	font-size: 24px;
+	font-weight: bold;
+	border-radius: 11px;
+	width: 302px;
+	height: 40px;
+}
+
+/*gruop the social media icons together*/
+footer ul {
+	width: 302px;
+	margin-top: 1rem;
+	font-size: 31px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+/*this div is to center the content inside of the footer*/
+.footermaindiv {
+	margin: auto;
+	width: 90%;
+}
+
+/*----------------------------TABLET VIEW*----------------------------*/
+@media (min-width:768px) {
+
+	/*Increase the font size for the first h1 for tablet view*/
+	.div1 h1 {
+		font-size: 80px;
+	}
+
+	/*Increase the font size for the first h2 for tablet view*/
+	.div2 h2 {
+		font-size: 24px;
+	}
+
+	/*Increase the size of the image*/
+	.div2 {
+		width: 420px;
+	}
+
+	/*change the width of the contact form*/
+	#contact {
+		width: 550px;
+		height: 590px;
+	}
+
+	/*change the width of the inputs an the button in the contact form*/
+	#contact fieldset input,
+	#contact-submit {
+		width: 550px;
+	}
+
+	/*----------------------FOOTER---------------------*/
+	/*this id is to make a "box" for the form on the footer and organize the grid*/
+	#calculate {
+		width: 500px;
+		display: grid;
+		grid-template-columns: 1fr 3fr 2fr;
+		grid-template-rows: 1fr;
+		grid-gap: 13px;
+	}
+
+	#calculate fieldset:nth-child(1) {
+		grid-column: 1 / 2;
+	}
+
+	#calculate fieldset:nth-child(2) {
+		grid-column: 2 / 3;
+	}
+
+	#calculate fieldset:nth-child(3) {
+		grid-column: 3 / span 5;
+	}
+}
+
+/*----------------------------DESKTOP VIEW*----------------------------*/
+@media (min-width: 1200px) {
+
+	/*this div is to dive the layaout in 3 equal parts*/
+	.maindiv {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	/*this div is to give a width to the image and to give it margin*/
+	.div2 {
+		width: 700px;
+		margin-left: -200px;
+		margin-right: -180px;
+	}
+
+	/*change the width of the contact form*/
+	#contact {
+		width: 500px;
+		height: 490px;
+	}
+
+	#contact fieldset input,
+	#contact-submit {
+		width: 500px;
+	}
+
+	/*this class is to send the icons to the bottom rigths*/
+	.socialmedia {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+}
