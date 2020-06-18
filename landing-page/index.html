@@ -12,72 +12,81 @@
 </head>
 
 <body>
-    <div class="maindiv">
-	<header>
-		<img src="images/logo/logo.png" alt="logo" width="100px">
-	</header>
+	<div class="maindiv">
+		<!--this div includes everthing that is in the body-->
+		<header>
+			<!--LOGO-->
+			<img src="images/logo/logo.png" alt="logo" width="100px">
+		</header>
 		<!--this div is to make the grid layout for the desktop view-->
-		<div class="div1">
-			<!--this div is to specify the h1-->
-			<h1>Want to be your own boss?</h1>
-			<h2>Start today and make up to $30/hr driving your own vehicle Dash!</h2>
-		</div>
-		<form>
+		<section class="section">
+			<!--this div is to make a grid for the dektop view-->
+			<div class="tittle">
+				<h1>Want to be your own boss?</h1>
+				<h3>Start today and make up to $30/hr driving your own vehicle Dash!</h3>
+				<img src="images/bg-image/scooter.svg">
+			</div>
+			<!--this form is to make a box fo the form-->
 			<div id="contact">
-				<!--this div is to make a box for the contact form-->
-				<h1>Apply Now</h1>
-				<h2>Enter your info below to get started.</h2>
-				<fieldset>
-					<input placeholder="First name" type="text">
-				</fieldset>
-				<fieldset>
-					<input placeholder="Last name" type="text">
-				</fieldset>
-				<fieldset>
-					<input placeholder="Email address" type="email">
-				</fieldset>
-				<fieldset>
-					<input placeholder="Phone number" type="tel">
-				</fieldset>
-				<li>
-					<input type="checkbox" name="check-box" /><span>I agree to dash terms</span>
-				</li>
-				<fieldset>
-					<button name="" type="submit" id="contact-submit" data-submit="...Sending">DRIVE WITH US</button>
-				</fieldset>
-				<div class="link">
-					<p>Already applied?<a href="#">Check your application status here</a></p>
+				<form>
+					<h2>Apply Now</h2>
+					<h4>Enter your info below to get started.</h4>
+					<fieldset>
+						<input placeholder="First name" type="text">
+					</fieldset>
+					<fieldset>
+						<input placeholder="Last name" type="text">
+					</fieldset>
+					<fieldset>
+						<input placeholder="Email address" type="email">
+					</fieldset>
+					<fieldset>
+						<input placeholder="Phone number" type="tel">
+					</fieldset>
+					<li>
+						<input type="checkbox" name="check-box" /><span>I agree to dash terms</span>
+					</li>
+					<fieldset>
+						<button name="" type="submit" id="contact-submit" data-submit="...Sending">DRIVE WITH US</button>
+					</fieldset>
+					<div class="link">
+						<p>Already applied?<a href="#">Check your application status here</a></p>
+					</div>
+				</form>
+			</div>
+		</section>
+		<footer>
+			<!--this div is to make a grid for the footer-->
+			<div class="footermaindiv">
+				<!--this is to make changes for the text in the footer -->
+				<div class="footertext">
+					<div class="textform">
+						<h5>See how much you can earn with Dash.</h5>
+						<h6>how many hours do you want to drive with us this week?</h6>
+					</div>
+					<!--this div is to make the grid changes for the form from mobile to tablet an desktop-->
+					<form id="calculator">
+						<fieldset>
+							<input placeholder="Hours" type="text">
+						</fieldset>
+						<fieldset>
+							<input placeholder="City" type="text">
+						</fieldset>
+						<fieldset>
+							<button id="calculate-submit">CALCULATE</button>
+						</fieldset>
+					</form>
+				</div>
+				<!--this div is to separte the icons from the footer form-->
+				<div class="socialmedia">
+					<ul>
+						<li><i class="fab fa-facebook"></i></li>
+						<li><i class="fab fa-instagram"></i></li>
+						<li><i class="fab fa-twitter"></i></li>
+						<li><i class="fab fa-linkedin"></i></li>
+					</ul>
 				</div>
 			</div>
-		</form>
+		</footer>
 	</div>
-	<footer>
-		<div class="footermaindiv">
-			<!--this div is to divide the footer in two differents parts-->
-			<h1>See how much you can earn with Dash.</h1>
-			<h2>how many hours do you want to drive with us this week?</h2>
-			<form id="calculate">
-				<fieldset>
-					<input placeholder="Hours" type="text">
-				</fieldset>
-				<fieldset>
-					<input placeholder="City" type="text">
-				</fieldset>
-				<fieldset>
-					<button name="" type="submit" id="calculate-submit">CALCULATE</button>
-				</fieldset>
-			</form>
-			<div class="socialmedia">
-				<!--this div is to separte the icons from the footer form-->
-				<ul>
-					<li><i class="fab fa-facebook"></i></li>
-					<li><i class="fab fa-instagram"></i></li>
-					<li><i class="fab fa-twitter"></i></li>
-					<li><i class="fab fa-linkedin"></i></li>
-				</ul>
-			</div>
-		</div>
-	</footer>
-</body>
-
-</html>
+</body></html>
