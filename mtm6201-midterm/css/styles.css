@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
+* {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
 header {
 	background-color: #3C3B3A;
 	text-align: center;
@@ -7,14 +12,19 @@ header {
 
 .logo {
 	/* this class is to resize the logo*/
-	width: 150px;
+    width: 90px;
+    
+}
+
+body nav {
+    padding-top: 2rem;
 }
 
 nav ul {
 	/* this tag is to put a the flex property to the navbar */
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+    justify-content: space-around;
 }
 
 nav ul li {
@@ -28,7 +38,6 @@ nav ul li a {
 	font-family: 'Raleway', sans-serif;
 	text-decoration: none;
 	font-size: 24px;
-	padding: 1.3rem;
 	border-radius: 34px;
 }
 
@@ -45,7 +54,7 @@ a.active {
 .section_one h1 {
 	/* this tag change the style and size of the fisrt section tittle */
 	color: #3C3B3A;
-	font-size: 55px;
+	font-size: 2.5rem;
 	font-weight: bold;
 	font-family: 'Raleway', sans-serif;
 	margin-bottom: 2rem;
@@ -56,7 +65,7 @@ a.active {
 	/* this tag change the style and size of the fisrt section paragraph*/
 	font-weight: lighter;
 	color: #3C3B3A;
-	font-size: 30px;
+	font-size: 2rem;
 	line-height: 4rem;
 	font-family: 'Raleway', sans-serif;
 	margin-bottom: 2rem;
@@ -126,7 +135,7 @@ a.active {
 	/* This is to change the style and size of the tittle of the second and fourth sections*/
 	color: #3C3B3A;
 	font-style: italic;
-	font-size: 55px;
+	font-size: 2.5rem;
 	font-family: 'Raleway', sans-serif;
 	text-align: left;
 }
@@ -190,7 +199,8 @@ a.active {
 
 .simon_image_h1 {
 	/*This is to center the simon's image"*/
-	align-self: center;
+    align-self: center;
+    font-size: 2.5rem;
 }
 
 .image_circle {
@@ -217,7 +227,7 @@ a.active {
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
 	color: #F2F2F2;
-	font-size: 33px;
+	font-size: 2.5rem;
 	font-weight: bold;
 	line-height: 4rem;
 	width: 300px;
@@ -236,7 +246,7 @@ a.active {
 .socialmedia h1 {
 	/*This is to set h1(Follow us) font styles for the footer*/
 	font-size: 24px;
-	font-size: 3rem;
+	font-size: 2.5rem;
 	padding: 2rem;
 	font-family: 'Raleway', sans-serif;
 	color: #F2F2F2;
@@ -318,221 +328,13 @@ footer a .resize_arrow {
 	display: none;
 }
 
-/*************************************************************TABLET VIEW****************************************************************************/
-
-@media (min-width: 820px) {
-	.sports {
-		/* this is to change the direction of the nav bar*/
-		display: flex;
-		justify-content: space-evenly;
-	}
-
-	.get_started_button {
-		/* this is to change heigth "get started" button */
-		height: 80px;
-	}
-
-	.button_learnmore {
-		/* this is to change heigth "learn more" button */
-		width: 370px;
-	}
-
-	.section_three {
-		/* this is to change the display of simon's section */
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-	}
-
-	header .logo {
-		/* this is to change the size of the logo*/
-		width: 150px;
-		margin-top: 1rem;
-		margin-left: 3rem;
-	}
-
-	body header {
-		/* this is to divide the navegaton bar in two differnts parts */
-		display: grid;
-		grid-template-columns: 2fr 1fr;
-		grid-template-rows: 1fr;
-	}
-
-	header {
-		/* this is to change the height of the navegation bar */
-		height: 170px;
-	}
-
-	nav ul {
-		/* this is to change the direction of the navbar*/
-		height: 150px;
-		margin-top: 5rem;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
-	}
-
-	.gotobottom h2 {
-		/* This is change the text for the go to top arrow */
-		font-size: 1.4rem;
-		margin-top: 2rem;
-		margin-bottom: 10px;
-		color: #3C3B3A;
-		text-decoration: none;
-		font-family: 'Raleway', sans-serif;
-	}
-
-	.gotobottom {
-		display: block;
-	}
-
-	.gotobottom img {
-		transform: rotate(180deg);
-	}
-
-}
-
-/*******************************************************************DESKTOP VIEW*****************************************************************/
-@media (min-width:1400px) {
-	nav ul li a:hover {
-		/*this is to add a hover over the navbar links*/
-		box-shadow: 5px 5px 6px -4px black;
-		background-color: #26A682;
-	}
-
-	.section_one .reading img {
-		/*this is to change the size of the reading image*/
-		width: 800px;
-	}
-
-	.section_one {
-		/*this is to make the division for the image colum and the text colum on the home page*/
-		margin: 3rem;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 2fr;
-		grid-template-areas:
-			" maintext image"
-			" gotobottom gotobottom";
-	}
-
-	.gotobottom {
-		grid-area: gotobottom;
-	}
-
-	.main-text {
-		grid-area: maintext;
-	}
-
-	.reading {
-		grid-area: image;
-	}
-
-	.section_two {
-		/*this is to change the background color for the "discover Algonquin college" */
-		background-color: #F2F2F2;
-		padding: 2rem;
-	}
-
-	.section_four {
-		/*this is to change the ackground color for the "discover te entretaiment"*/
-		background-color: #FFFFFF;
-		padding: 2rem;
-	}
-
-	.section_two h1,
-	.section_four h1 {
-		/*this is to change the h1 of the discover sections */
-		margin-top: -3rem;
-		font-size: 39px;
-		font-weight: bolder;
-		color: #3C3B3A;
-	}
-
-	.section_two h2,
-	.section_four h2 {
-		/*this is to change the h2 of the discover sections */
-		margin-top: 13px;
-		font-size: 30px;
-	}
-
-	.section_two p,
-	.section_four p {
-		/*this is to change the p of the discover sections */
-		margin-top: 13px;
-		line-height: 2.7rem;
-		font-size: 24px;
-	}
-
-	.section_three {
-		/*this is to add a hover over the navbar links*/
-		padding: 1rem;
-		;
-		height: 250px;
-	}
-
-	.image_circle {
-		/*this is to resize the circle image of simon*/
-		margin-top: -25px;
-		width: 250px;
-		height: 250px;
-	}
-
-	.simon_image_h1 {
-		/*this is to put the text below the image*/
-		font-size: 28px;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
-	}
-
-	.simon_image_h1 h1 {
-		/*this is put the text at the same level of the image*/
-		margin-top: 2rem;
-	}
-
-	.simon_text p {
-		/*this is change the change the line-height for the simon paragraph */
-		padding: 2rem;
-		line-height: 47px;
-		font-size: 20px;
-		margin-top: -20px;
-	}
-
-	.section_two {
-		/*this is to create two columns, one for the image and the other for the "discover text"*/
-		padding: 4rem;
-		display: grid;
-		grid-template-columns: 50% 50%;
-		grid-template-rows: 1fr;
-	}
-
-	.section_four {
-		/*this is to create two columns, one for the image and the other for the "discover text"*/
-		padding: 4rem;
-		display: grid;
-		grid-template-columns: 50% 50%;
-		grid-template-rows: 1fr;
-	}
-
-	.change-position {
-		/*this is change the order of the grid*/
-		grid-column: 2 / span 3;
-	}
-
-	.entertainment_text {
-		grid-column: 1 / 2;
-		grid-row: 1 / 2;
-	}
-
-}
-
 /*_______________________ABOUT PAGE_______________________________ABOUT PAGE__________________________ABOUT PAGE______________________________*/
 
 
 .main_about h1 {
 	/*this is to change the size and style for the first tittle on the about page*/
 	color: #3C3B3A;
-	font-size: 55px;
+	font-size: 2.5rem;
 	font-weight: bold;
 	font-family: 'Raleway', sans-serif;
 	margin-bottom: 2rem;
@@ -563,7 +365,7 @@ footer a .resize_arrow {
 .whowhatwhere_text h1 {
 	/*this is to change the h1 size and style for the "who","what","where" section on the about page*/
 	color: #3C3B3A;
-	font-size: 55px;
+	font-size: 2.5rem;
 	font-weight: bold;
 	font-family: 'Raleway', sans-serif;
 	margin-bottom: 2rem;
@@ -591,7 +393,7 @@ footer a .resize_arrow {
 .services2 h1 {
 	/*this is to change the h1 color, and font styles of the sports sections*/
 	color: #3C3B3A;
-	font-size: 55px;
+	font-size: 2.5rem;
 	font-weight: bold;
 	font-family: 'Raleway', sans-serif;
 	margin-bottom: 2rem;
@@ -730,128 +532,6 @@ footer a .resize_arrow {
 	font-weight: bolder;
 }
 
-
-
-/**********************************************************************TABLET VIEW********************************************************************/
-
-@media (min-width: 820px) {
-
-	.services1 img,
-	.services2 img {
-		/*this is to show the services images again*/
-		display: block;
-		width: 90%;
-		height: 100%;
-		object-fit: cover;
-	}
-
-	.main_about img {
-		/*this is to resize the main image */
-		margin: auto;
-		width: 700px;
-	}
-
-	.main_about {
-		/*this is to center the main image */
-		text-align: center;
-	}
-
-	.services1 h1,
-	.services2 h1 {
-		/*change the h1 of the sports divs*/
-		font-size: 44px;
-		line-height: 3rem;
-	}
-
-	.services1 h2,
-	.services2 h2 {
-		/*change the h2 of the sports divs*/
-		font-size: 34px;
-	}
-
-	.services1 p,
-	.services2 p {
-		/*change the paragraphs of the sports divs*/
-		line-height: 3rem;
-		font-size: 24px;
-	}
-
-	.services1 {
-		/*this is to create a grid with two columns, one for image and one for text*/
-		padding: 7rem;
-		display: grid;
-		grid-template-columns: 40% 60%;
-		grid-template-rows: 1fr;
-		grid-gap: 1rem;
-	}
-
-	.services2 {
-		/*this is to create a grid with two columns, one for the text and one for the image*/
-		padding: 7rem;
-		display: grid;
-		grid-template-columns: 60% 40%;
-		grid-template-rows: 1fr;
-		grid-gap: 1rem;
-	}
-
-	.divinding_line {
-		/*this is to put the subscribe button behind the text*/
-		display: flex;
-		justify-content: center;
-	}
-
-	.divinding_line h3 {
-		/*this is to separate the text from the button*/
-		margin-right: 2rem;
-	}
-}
-
-/*******************************************************************DESKTOP VIEW*****************************************************************/
-@media (min-width:1400px) {
-	.main_about {
-		/* this is to center the content for the about page*/
-		max-width: 1400px;
-		margin: auto;
-		display: grid;
-		grid-template-columns: 50% 50%;
-		grid-template-rows: 1fr;
-		padding: 2rem;
-		margin-bottom: 3rem;
-		margin-top: 4rem;
-	}
-
-	.whowhatwhere_text {
-		/* this is to divide the trhee colums "who, what, where" */
-		padding: 9rem;
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: 1fr;
-		grid-gap: 1rem;
-	}
-
-	/*this is to change to font sizes for the "who, what, where" section*/
-	.whowhatwhere_text p {
-		font-size: 24px;
-	}
-
-	.whowhatwhere_text h1 {
-		font-size: 44px;
-	}
-
-	.main_about p {
-		font-size: 30px;
-		line-height: 50px;
-	}
-
-	.thanksto-two {
-		/*this is to change the direction of the "thanks to" icons */
-		margin: 2rem;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
-	}
-}
-
 /*_____________________CONTACT PAGE__________________________________CONTACT PAGE________________________________CONTACT PAGE________________________*/
 
 /* this is to change the font sizes of the contact page*/
@@ -859,7 +539,7 @@ footer a .resize_arrow {
 .contactpage_section2 h1 {
 	color: #3C3B3A;
 	line-height: 70px;
-	font-size: 55px;
+	font-size: 2.5rem;
 	font-weight: bolder;
 	font-family: 'Raleway', sans-serif;
 	text-align: left;
@@ -954,7 +634,8 @@ fieldset textarea {
 }
 
 #contactform h1 {
-	color: #F2F2F2;
+    color: #F2F2F2;
+    font-size: 2.5rem;
 }
 
 .contactform { /*this is to center the contactfom*/
@@ -986,8 +667,140 @@ iframe { /*this is to make the map to go from side to side 100% od the window */
 
 
 
-/**********************************************************************TABLET VIEW********************************************************************/
+/*************************************************************TABLET VIEW****************************************************************************/
+
 @media (min-width: 820px) {
+	.sports {
+		/* this is to change the direction of the nav bar*/
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	.get_started_button {
+		/* this is to change heigth "get started" button */
+		height: 80px;
+	}
+
+	.button_learnmore {
+		/* this is to change heigth "learn more" button */
+		width: 370px;
+	}
+
+	.section_three {
+		/* this is to change the display of simon's section */
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	body header {
+		/* this is to divide the navegaton bar in two differnts parts */
+        display: grid;
+        padding: 2rem;
+        height: 90px;
+		grid-template-columns: 2fr 1fr;
+		grid-template-rows: 1fr;
+    }
+    
+	nav ul {
+		/* this is to change the direction of the navbar*/
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+    }
+
+	.gotobottom h2 {
+		/* This is change the text for the go to top arrow */
+		font-size: 1.4rem;
+		margin-top: 2rem;
+		margin-bottom: 10px;
+		color: #3C3B3A;
+		text-decoration: none;
+		font-family: 'Raleway', sans-serif;
+	}
+
+	.gotobottom {
+		display: block;
+	}
+
+	.gotobottom img {
+		transform: rotate(180deg);
+    }
+
+
+/**********************************************************************About page*******************************************************************/
+
+	.services1 img,
+	.services2 img {
+		/*this is to show the services images again*/
+		display: block;
+		width: 90%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.main_about img {
+		/*this is to resize the main image */
+		margin: auto;
+		width: 700px;
+	}
+
+	.main_about {
+		/*this is to center the main image */
+		text-align: center;
+    }
+    
+    .main_about h1 {
+        font-size: 2.5rem;
+    }
+
+	.services1 h1,
+	.services2 h1 {
+		/*change the h1 of the sports divs*/
+		font-size: 3rem;
+		line-height: 3rem;
+	}
+
+	.services1 h2,
+	.services2 h2 {
+		/*change the h2 of the sports divs*/
+		font-size: 34px;
+	}
+
+	.services1 p,
+	.services2 p {
+		/*change the paragraphs of the sports divs*/
+		line-height: 3rem;
+		font-size: 24px;
+	}
+
+	.services1 {
+		/*this is to create a grid with two columns, one for image and one for text*/
+		padding: 7rem;
+		display: grid;
+		grid-template-columns: 40% 60%;
+		grid-template-rows: 1fr;
+		grid-gap: 1rem;
+	}
+
+	.services2 {
+		/*this is to create a grid with two columns, one for the text and one for the image*/
+		padding: 7rem;
+		display: grid;
+		grid-template-columns: 60% 40%;
+		grid-template-rows: 1fr;
+		grid-gap: 1rem;
+	}
+
+	.divinding_line {
+		/*this is to put the subscribe button behind the text*/
+		display: flex;
+		justify-content: center;
+	}
+
+	.divinding_line h3 {
+		/*this is to separate the text from the button*/
+		margin-right: 2rem;
+    }
 
 	.contactpage_section2,
 	.contactpage_section1 { 
@@ -1010,13 +823,193 @@ iframe { /*this is to make the map to go from side to side 100% od the window */
 }
 
 /*******************************************************************DESKTOP VIEW*****************************************************************/
-@media (min-width:1300px) {
+@media (min-width:1400px) {
+	nav ul li a:hover {
+		/*this is to add a hover over the navbar links*/
+		box-shadow: 5px 5px 6px -4px black;
+        background-color: #26A682;
+        padding: 1.3rem;
+    }
+    
+	.section_one .reading img {
+		/*this is to change the size of the reading image*/
+		width: 800px;
+	}
+
+	.section_one {
+		/*this is to make the division for the image colum and the text colum on the home page*/
+		margin: 3rem;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 2fr;
+		grid-template-areas:
+			" maintext image"
+			" gotobottom gotobottom";
+	}
+
+	.gotobottom {
+		grid-area: gotobottom;
+	}
+
+	.main-text {
+		grid-area: maintext;
+	}
+
+	.reading {
+		grid-area: image;
+	}
+
+	.section_two {
+		/*this is to change the background color for the "discover Algonquin college" */
+		background-color: #F2F2F2;
+		padding: 2rem;
+	}
+
+	.section_four {
+		/*this is to change the ackground color for the "discover te entretaiment"*/
+		background-color: #FFFFFF;
+		padding: 2rem;
+	}
+
+	.section_two h1,
+	.section_four h1 {
+		/*this is to change the h1 of the discover sections */
+		margin-top: -3rem;
+		font-size: 3rem;
+		font-weight: bolder;
+		color: #3C3B3A;
+	}
+
+	.section_two h2,
+	.section_four h2 {
+		/*this is to change the h2 of the discover sections */
+		margin-top: 13px;
+		font-size: 30px;
+	}
+
+	.section_two p,
+	.section_four p {
+		/*this is to change the p of the discover sections */
+		margin-top: 13px;
+		line-height: 2.7rem;
+		font-size: 1.5rem;
+	}
+
+	.image_circle {
+		/*this is to resize the circle image of simon*/
+		margin-top: -25px;
+		width: 250px;
+		height: 250px;
+	}
+
+	.simon_image_h1 {
+		/*this is to put the text below the image*/
+		font-size: 28px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+
+	.simon_image_h1 h1 {
+		/*this is put the text at the same level of the image*/
+		margin-top: 2rem;
+	}
+
+	.simon_text p {
+		/*this is change the change the line-height for the simon paragraph */
+		padding: 2rem;
+		line-height: 47px;
+		font-size: 20px;
+		margin-top: -20px;
+	}
+
+	.section_two {
+		/*this is to create two columns, one for the image and the other for the "discover text"*/
+		padding: 4rem;
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 1fr;
+	}
+
+	.section_four {
+		/*this is to create two columns, one for the image and the other for the "discover text"*/
+		padding: 4rem;
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 1fr;
+	}
+
+	.change-position {
+		/*this is change the order of the grid*/
+		grid-column: 2 / span 3;
+	}
+
+	.entertainment_text {
+		grid-column: 1 / 2;
+		grid-row: 1 / 2;
+    }
+
+/*******************************************************************ABOUT PAGE****************************************************************/
+	.main_about {
+		/* this is to center the content for the about page*/
+		max-width: 1400px;
+		margin: auto;
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 1fr;
+		padding: 2rem;
+		margin-bottom: 3rem;
+		margin-top: 4rem;
+	}
+
+	.whowhatwhere_text {
+		/* this is to divide the trhee colums "who, what, where" */
+		padding: 9rem;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+		grid-gap: 1rem;
+	}
+
+	/*this is to change to font sizes for the "who, what, where" section*/
+	.whowhatwhere_text p {
+		font-size: 1.5rem;
+	}
+
+	.whowhatwhere_text h1 {
+		font-size: 3rem;
+	}
+
+	.main_about p {
+		font-size: 1.5rem;
+		line-height: 50px;
+	}
+
+	.thanksto-two {
+		/*this is to change the direction of the "thanks to" icons */
+		margin: 2rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+    }
+    
+    .services1 p, 
+    .services2 p {
+        font-size: 1.5rem;
+    }
+
+/*******************************************************************CONTACT PAGE***************************************************************/
 	.contactpage_section1 { /*this is to divide the firts section in two columns*/
 		max-width: 1600px;
 		display: grid;
 		grid-template-columns: 2fr 1fr;
 		grid-gap: 1rem;
-	}
+    }
+    
+    .contactpage_section1 p {
+        font-size: 1.5rem;
+        list-style: 1.5rem;
+    }
 
     #contactform { /* this is to make the contact form samller, so it fits on the window browser */
 		width: 600px;
@@ -1025,5 +1018,39 @@ iframe { /*this is to make the map to go from side to side 100% od the window */
 
 	.contactpage_section1 img { /*this is to change the width of the image, so i doesn't get too samll*/
 		width: 600px;
-	}
+    }
+    
+    .contactpage_section1 h1,
+    .contactpage_section2 h1 {
+        font-size: 3rem;
+    }
+
+    .contactpage_section2 h2 {
+        font-size: 1.8rem;
+    }
+
+    .location-map {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 1rem;
+        padding: 5rem;
+    }
+
+    iframe {
+        object-fit: none;
+    }
+
+    .get_started_button:hover {
+        width: 440px;
+        height: 80px;
+        background-color:#26A682;
+        animation-name: example;
+        animation-duration: 1.5s;
+      }
+      
+      @keyframes example {
+        from {background-color:#26A682;}
+        to {background-color: #7D70BA;}
+      }
 }
