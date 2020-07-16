@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Prototype</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<script src="https://kit.fontawesome.com/d098eb3c46.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<header>
+		<img src="images/logo.svg" id="top" class="logo" alt="logo">
+		<nav>
+			<ul>
+				<li><a href="index.html" class="active">Home</a></li> 
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+    </header>
+    <!-- the page is divided into 4 sections, so i can change the colors and their respective grid layouts -->
+	<section class="section_one"> 
+        <!-- the main text is the first text and button on the homepage -->
+		<div class="main-text"> 
+			<h1>Discover Your ARC. </h1>
+			<p>With Algonquin College's newest facility, there's always something for everyone to discover and enjoy!</p>
+			<div class="sports">
+				<li><img src="icons/bowling.svg" class="icons" alt="bowling"><a href="">Bowling</a></li>
+				<li><img src="icons/climbing.svg" class="icons" alt="climbing"><a href="">Rock Climbing</a></li>
+				<li><img src="icons/fitness_center.svg" class="icons" alt="fitness zone"><a href="">Fitness Center</a></li>
+				<li><img src="icons/indoor_court.svg" class="icons" alt="indoor court"><a href="">Indoor Court</a></li>
+			</div>
+			<button class="get_started_button">Get Started</button>
+        </div>
+        <!-- this is the image of the girl reading -->
+		<div class="reading">
+			<img src="images/discover.svg" alt="gril reading">
+        </div>
+        <!-- this is linked to the second section -->
+		<div class="gotobottom"> 
+			<h2>scroll</h2>
+			<a href="#down"><img src="icons/arrow.svg" class="resize_arrow"></a>
+		</div>
+    </section>
+    <!-- second section -->
+	<section class="section_two" id="down">
+		<img src="images/school.jpg" alt="graduated students">
+		<div class="secondsection_discover">
+			<h1>Discover.</h1>
+			<h2>Algonquin College</h2>
+			<p>of Applied Arts and Technology is a publicly funded English-language college located in Ottawa, Ontario, Canada. The college serves the National Capital Region and the outlying areas of Eastern Ontario, Western Quebec, and Upstate New York.</p>
+			<button class="button_learnmore">Learn More</button>
+		</div>
+    </section>
+    <!-- section trhee -->
+	<section class="section_three">
+		<div class="simon_image_h1">
+            <!-- this div id to make a circle aroud simon's photo -->
+			<div class="image_circle"> 
+				<img src="images/simon.jpg" class="simonimage" alt="simon photo">
+			</div>
+			<h1>Dijanelle Simon SA President</h1>
+		</div>
+		<div class="simon_text">
+			<p>"Only with increased capacity can we expand and create a more inclusive program that attracts a greater number of students to participate in physical and social activity. The Students' Association is committed to and focused on programming that results in our students taking person ownership for their health."</p>
+		</div>
+    </section>
+    <!-- section four -->
+	<section class="section_four">
+		<div class="change-position">
+			<img src="images/entertainment.jpg" alt="people in a bar">
+		</div>
+		<div class="entertainment_text">
+			<h1>Discover.</h1>
+			<h2>The entertainment</h2>
+			<p>at Algonquin College is endless. We currently have the Algonquin Commons Theatre where we host a variety of events. Now with the coming of the ARC facility, not only will it be providing more space for the students to study, but it will also be bringing in more room for late-night entertainment.</p>
+			<button class="button_learnmore">Learn More</button>
+		</div>
+    </section>
+	<footer class="footerlayout">
+        <!-- this div is to put the "follow us" on the top and behind it the social media icons -->
+		<div class="socialmedia"> 
+			<h1>Follow us</h1>
+			<li><img src="icons/facebook.svg"></li>
+			<li><img src="icons/instagram.svg"></li>
+			<li><img src="icons/twitter.svg"></li>
+			<li><img src="icons/youtube.svg"></li>
+        </div>
+        <!-- this div is to put together the "back to top" text and the arrow -->
+		<div class="gototop">
+			<a href="#top"><img src="icons/arrow.svg" class="resize_arrow" alt="arrow"></a>
+			<h2>Back to top</h2>
+		</div>
+	</footer>
+</body>
