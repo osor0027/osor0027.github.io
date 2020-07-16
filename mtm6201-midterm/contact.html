@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Prototype</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/reset.css">
+</head>
+
+<body>
+	<header>
+		<img src="images/logo.svg" class="logo" alt="logo">
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html" class="active">Contact</a></li>
+			</ul>
+		</nav>
+    </header>
+    <!-- this page just has two sections, on is for the fisrt text with the image and the contact form; and the other section is for the map and for the location information -->
+	<section>
+        <!-- this div to create the grid with the two columns dor desktop view   -->
+		<div class="contactpage_section1">
+			<div>
+				<h1>We Want to Hear From You</h1>
+				<p>If you have an idea for an activity that you think you and your fellow students would love to participate in that we are not already offering, we want to know about it!</p>
+				<img src="images/contact-img.svg" alt="Contact">
+			</div>
+			<div class="contactform">
+				<form id="contactform">
+					<h1>Contact us</h1>
+					<fieldset>
+						<label for="name">Full Name</label>
+                        <input type="text" name="name" placeholder="Full Name">
+                        <!-- placehoder to write inside of the input -->
+					</fieldset>
+					<fieldset>
+						<label for="email">Student Number</label>
+                        <input type="text" name="studentnumber" placeholder="Student Number">
+                        <!-- placehoder to write inside of the input -->
+					</fieldset>
+					<fieldset>
+						<label for="email">Email</label>
+                        <input type="text" name="email" placeholder="Email">
+                        <!-- placehoder to write inside of the input -->
+					</fieldset>
+					<fieldset>
+						<label for="message">Message</label>
+                        <textarea name="message" id="message" placeholder="Message"></textarea>
+                        <!-- placehoder to write inside of the textarea-->
+					</fieldset>
+					<button type="submit" id="submit">Submit</button>
+				</form>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="contactpage_section2">
+			<h1>Our Location.</h1>
+            <h2>Algonquin College Students' Association</h2>
+            <!-- this list is to make the text to go in differnts lines -->
+			<li>Monday to Friday – 8:30am to 6:00pm</li>
+			<li>1385 Woodroffe Avenue (E114)</li>
+			<li>Ottawa, Ontario</li>
+			<li>K2G 1V8</li>
+			<li>(613) 727-4723 x7711</li>
+        </div>
+        <!-- this is the map for link -->
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2804.039149426827!2d-75.75911148444636!3d45.348021979099805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College!5e0!3m2!1sen!2sca!4v1594572939134!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+	</section>
+	<footer class="footerlayout">
+		<div class="socialmedia">
+			<h1>Follow us</h1>
+			<li><img src="icons/facebook.svg"></li>
+			<li><img src="icons/instagram.svg"></li>
+			<li><img src="icons/twitter.svg"></li>
+			<li><img src="icons/youtube.svg"></li>
+		</div>
+		<div class="gototop">
+			<a href="#top"><img src="icons/arrow.svg" class="resize_arrow"></a>
+			<h2>Back to top</h2>
+		</div>
+	</footer>
+</body>
