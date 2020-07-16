@@ -254,21 +254,7 @@ a.active {
 }
 
 /*This create a grid for the social media icons on the footer*/
-.socialmedia:nth-child(2) {
-	grid-area: b;
-}
 
-.socialmedia:nth-child(3) {
-	grid-area: c;
-}
-
-.socialmedia:nth-child(4) {
-	grid-area: d;
-}
-
-.socialmedia:nth-child(5) {
-	grid-area: e;
-}
 
 .socialmedia li img {
 	/* This is to set a size for the socal media icon on the footer*/
@@ -298,13 +284,20 @@ footer a .resize_arrow {
 	/* This create the grid for the social media and "follow us" in the footer*/
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	grid-template-areas:
-		"a a a a"
-		"b c d e";
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    " a a a a"
+    " b b b b";
 	list-style: none;
 	width: 300px;
 	grid-area: social;
+}
+
+.socialmedia ul {
+    grid-area: b;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .gototop {
@@ -718,7 +711,7 @@ iframe { /*this is to make the map to go from side to side 100% od the window */
 		font-family: 'Raleway', sans-serif;
 	}
 
-    
+
 	.gotobottom {
 		display: block;
 	}
