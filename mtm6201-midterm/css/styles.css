@@ -823,7 +823,7 @@ iframe { /*this is to make the map to go from side to side 100% od the window */
 }
 
 /*******************************************************************DESKTOP VIEW*****************************************************************/
-@media (min-width:1400px) {
+@media (min-width:1300px) {
 	nav ul li a:hover {
 		/*this is to add a hover over the navbar links*/
 		box-shadow: 5px 5px 6px -4px black;
