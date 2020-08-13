@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+body {
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
 nav {
 	background-color: #9BB5B5;
 	color: black;
@@ -254,32 +260,32 @@ footer {
 	width: 100%;
 }
 
+.adress {
+	padding: 2rem;
+}
+
+.adress ul li {
+	list-style: none;
+}
+
+#contactform button {
+	background-color: #37C5B9;
+	border: none;
+	color: white;
+	padding: 5px;
+	font-weight: bold;
+	margin-top: 3rem;
+}
+
+#contactform {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
 @media (min-width: 800px) {
 
 	/*_______________________________________________Rate stars______________________________________________________*/
-	.container {
-		margin: 1rem;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr;
-		grid-gap: 1rem;
-		grid-template-areas:
-			"a b"
-			"c c";
-	}
-
-	.firt-rate {
-		grid-area: a;
-	}
-
-	.second-rate {
-		grid-area: b;
-	}
-
-	.last-rate {
-		grid-area: c;
-	}
-
 	.container td {
 		width: 200px;
 	}
