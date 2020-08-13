@@ -309,7 +309,6 @@ footer {
 		color: white;
 	}
 
-
 	.container {
 		margin: 1rem;
 		display: grid;
@@ -323,5 +322,9 @@ footer {
 		grid-template-columns: 2fr 2fr 1fr;
 		width: 1000px;
 		margin: auto;
+	}
+
+	.contact-page-wrapper {
+		width: 900px;
 	}
 }
